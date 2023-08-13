@@ -111,6 +111,21 @@ do {
 
 
 
+/* CONVERSÕES */
+
+Console.WriteLine("\n\nCONVERSÕES\n\n");
+
+string numeroComoPalavra = "1234";
+int numeroComoNumero = int.Parse(numeroComoPalavra);
+
+numeroComoPalavra = "1234.55";
+double numeroComVirgula3 = double.Parse(numeroComoPalavra);
+
+Console.WriteLine("Número convertido de string para int: " + numeroComoNumero);
+Console.WriteLine("Número convertido de string para double: " + numeroComVirgula3);
+
+
+
 /* ENUMERADOR */
 
 Console.WriteLine("\n\nENUMERADOR\n\n");
@@ -132,3 +147,23 @@ switch(dia) {
         Console.WriteLine("DIA ÚTIL");
         break;
 }
+
+
+
+/* DATAS */
+
+Console.WriteLine("\n\nENUMERADOR\n\n");
+
+var dataDeHoje = DateTime.Now;
+var dataCriada = new DateTime(2023, 11, 10); // 10/nov/2023
+
+string dataComoPalavra = "08/07/2023";
+var dataConvertida = DateTime.Parse(dataComoPalavra);
+
+Console.WriteLine(dataDeHoje.ToString("yyyy/MM/dd"));
+Console.WriteLine(dataCriada.ToString("dd/MM/yy"));
+Console.WriteLine(dataConvertida.ToString("MM/dd/yyyy"));
+
+Console.WriteLine("DIA: " + dataConvertida.Day);
+Console.WriteLine("MÊS: " + dataConvertida.Month);
+Console.WriteLine("ANO: " + dataConvertida.Year);

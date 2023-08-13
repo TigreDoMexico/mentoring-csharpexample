@@ -9,5 +9,7 @@ Dentro do arquivo tem exemplos de:
 - Operações (Matemáticas e Booleanas)
 - Condição (IF, ELSE, TERNÁRIO, SWITCH)
 - Laço de Repetição (FOR, WHILE, DO WHILE)
+- Conversões
 - Enumerador
+- Data
 
