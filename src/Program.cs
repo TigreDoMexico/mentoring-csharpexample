@@ -1,6 +1,9 @@
-﻿/* COMANDOS BÁSICOS */
+﻿using EstudoCSharp.Enumerador;
+
+/* COMANDOS BÁSICOS */
 
 // Comando para imprimir uma mensagem na tela
+
 Console.WriteLine("Bem-vindo ao projeto de Estudo CSharp");
 Console.WriteLine("Digite seu nome:");
 
@@ -109,10 +112,23 @@ do {
 
 
 /* ENUMERADOR */
-/*
+
 Console.WriteLine("\n\nENUMERADOR\n\n");
 
-var dia = DiasDaSemana.Quarta;
+var dia = DiasDaSemana.Quarta; // ESTE ENUMERADOR ESTÁ DECLARADO EM: Enumerador/DiaDaSemana.cs
 
-Console.WriteLine("" + dia);
-*/
+Console.WriteLine("HOJE É " + dia);
+
+/* SWITCH */
+
+switch(dia) {
+    case DiasDaSemana.Domingo:
+        Console.WriteLine("FINAL DE SEMANA");
+        break;
+    case DiasDaSemana.Sabado:
+        Console.WriteLine("FINAL DE SEMANA");
+        break;
+    default:
+        Console.WriteLine("DIA ÚTIL");
+        break;
+}
