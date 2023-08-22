@@ -167,3 +167,30 @@ Console.WriteLine(dataConvertida.ToString("MM/dd/yyyy"));
 Console.WriteLine("DIA: " + dataConvertida.Day);
 Console.WriteLine("MÊS: " + dataConvertida.Month);
 Console.WriteLine("ANO: " + dataConvertida.Year);
+
+
+
+/* ARRAYS - LISTA ESTÁTICA */
+
+var array1 = new int[10]; // Criando um array de 10 elementos do tipo int
+
+array1[0] = 1; // Numeros acessados e modificados pelo índice
+array1[1] = 2;
+foreach(var item in array1)
+    Console.WriteLine(item);
+
+Console.WriteLine("Tamanho do Array: " + array1.Length);
+
+
+
+/* LIST - LISTA DINÂMICA */
+
+var list1 = new List<double>(); // Criando uma lista dinâmica do tipo double
+
+list1.Add(30.0); // Adição
+list1.Insert(0, 40.0); // Inserir valor na posição 0
+
+foreach(var item in list1)
+    Console.WriteLine(string.Format("{0:N2}", item));
+
+Console.WriteLine("Tamanho da Lista: " + list1.Count);

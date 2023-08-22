@@ -12,4 +12,4 @@ Dentro do arquivo tem exemplos de:
 - Conversões
 - Enumerador
 - Data
-
+- Arrays e Listas
